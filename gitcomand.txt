@@ -1,0 +1,17 @@
+
+//------create repository:-
+* git init
+* git add .
+* git commit -m 'write changes'
+* past remote url
+* git push origin master
+
+
+//-------branch create:-
+* git checkout -b 'write brach name'
+
+
+//-----push the code on gitHub:-
+* git add .
+* git commit -m 'write change'
+* git push origin 'branch name'   for example vijay
