@@ -3,15 +3,43 @@ import styled from 'styled-components'
 import { services } from '../utils/constants'
 
 const Services = () => {
-  return <h4>services </h4>
+  return <Wrapper>
+      <div className='section-center'>
+            <article className='header'>
+                <h3>
+                    custom furniture <br />
+                    built only for you
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed maximus mi. Sed mattis, lectus in tempor rhoncus, nulla metus malesuada lacus, vel dapibus elit dui quis ligula. Proin
+                </p>
+            </article>
+            <div className='services-center'>
+                {
+                  services.map((service)=>{
+                     const {id,icon,title,text} = service;
+                     return(
+                        <article key={id} className='service'>
+                            <span className='icon'>{icon}</span>
+                            <h4>{title}</h4>
+                            <p>{text}</p>
+                        </article>
+                     )
+                  })
+                }
+            </div>
+      </div>
+  </Wrapper>
 }
 
+
 const Wrapper = styled.section`
+  border:3px dotted black;
   h3,
   h4 {
     color: var(--clr-primary-1);
   }
-  padding: 5rem 0;
+  padding: 5rem 0; 
 
   background: var(--clr-primary-10);
 
@@ -24,11 +52,13 @@ const Wrapper = styled.section`
     color: var(--clr-primary-3);
   }
   .services-center {
+    border:2px solid red;
     margin-top: 4rem;
     display: grid;
     gap: 2.5rem;
   }
   .service {
+    border:2px solid green;
     background: var(--clr-primary-7);
     text-align: center;
     padding: 2.5rem 2rem;
@@ -38,6 +68,7 @@ const Wrapper = styled.section`
     }
   }
   span {
+    border:2px solid blue;
     width: 4rem;
     height: 4rem;
     display: grid;
