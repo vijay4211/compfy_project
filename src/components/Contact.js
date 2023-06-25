@@ -3,21 +3,21 @@ import styled from 'styled-components'
 const Contact = () => {
   return (
     <Wrapper>
-      <div className='section-center'>
+      <div className="section-center">
         <h3>Join our newsletter and get 20% off</h3>
-        <div className='content'>
+        <div className="content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
             sint unde quaerat ratione soluta veniam provident adipisci cumque
             eveniet tempore?
           </p>
-          <form className='contact-form'>
+          <form className="contact-form">
             <input
-              type='email'
-              className='form-input'
-              placeholder='enter email'
+              type="email"
+              className="form-input"
+              placeholder="enter email"
             />
-            <button type='submit' className='submit-btn'>
+            <button type="submit" className="submit-btn">
               subscribe
             </button>
           </form>
@@ -27,7 +27,6 @@ const Contact = () => {
   )
 }
 const Wrapper = styled.section`
-  border:2px solid red;
   padding: 5rem 0;
   h3 {
     text-transform: none;
@@ -38,7 +37,6 @@ const Wrapper = styled.section`
     color: var(--clr-grey-5);
   }
   .contact-form {
-    border:2px solid green;
     width: 90vw;
     max-width: 500px;
     display: grid;
@@ -77,7 +75,6 @@ const Wrapper = styled.section`
     color: var(--clr-white);
   }
   @media (min-width: 992px) {
-    border:2px solid blue;
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
