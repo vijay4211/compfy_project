@@ -34,7 +34,6 @@ const Services = () => {
 
 
 const Wrapper = styled.section`
-  border:3px dotted black;
   h3,
   h4 {
     color: var(--clr-primary-1);
@@ -52,13 +51,11 @@ const Wrapper = styled.section`
     color: var(--clr-primary-3);
   }
   .services-center {
-    border:2px solid red;
     margin-top: 4rem;
     display: grid;
     gap: 2.5rem;
   }
   .service {
-    border:2px solid green;
     background: var(--clr-primary-7);
     text-align: center;
     padding: 2.5rem 2rem;
@@ -68,7 +65,6 @@ const Wrapper = styled.section`
     }
   }
   span {
-    border:2px solid blue;
     width: 4rem;
     height: 4rem;
     display: grid;
